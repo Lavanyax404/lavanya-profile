@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya Priya - Profile</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, h1, h2 {
+            font-family: "Raleway", sans-serif;
+        }
+        body, html {
+            height: 100%;
+            background-color: white;
+            margin: 0;
+        }
+        p {
+            line-height: 2;
+        }
+        .container {
+            padding: 64px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .about-me-img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 32px auto;
+            perspective: 1000px;
+        }
+        .about-me-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid black;
+            transition: transform 0.6s ease;
+            backface-visibility: hidden;
+        }
+        .about-me-img-container:hover .about-me-img {
+            transform: rotateY(180deg);
+        }
+        .name-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            text-align: center;
+            width: 100%;
+        }
+        .about-me-img-container:hover .name-overlay {
+            opacity: 1;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: black;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #4CAF50; /* Change color on hover */
+        }
+        .contact-form-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #f9f9f9;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 24px);
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+        <a href="#about" style="width:25%" class="w3-bar-item w3-button">About Me</a>
+        <a href="#education" style="width:25%" class="w3-bar-item w3-button">Education</a>
+        <a href="#certifications-and-projects" style="width:25%" class="w3-bar-item w3-button">Certifications & Projects</a>
+        <a href="#contact" style="width:25%" class="w3-bar-item w3-button">Contact Me</a>
+    </div>
+</div>
+
+<!-- About Me Section -->
+<div class="w3-container w3-padding-64" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-text-grey"><b>About Me</b></h1>
+        <div class="about-me-img-container">
+            <img class="about-me-img" src="C:/Users/djaga/OneDrive/Desktop/IMG_0440.jpg" alt="Lavanya Priya">
+            <div class="name-overlay">Lavanya Priya</div>
+        </div>
+        <p><i>I am an enthusiastic third-year engineering student constantly immersed in the realm of innovation, fueled by a love for problem-solving and dedication to crafting future-forward solutions. I actively engage in diverse projects, merging technical expertise with a creative spark to engineer tomorrow's breakthroughs. Motivated individual with strong work ethics and the ability to work independently. I also possess strong organizational and team collaboration skills, with experience in improving processes. Served as an Executive Member of Sparks Student Association, KPRIET, 2023-24, and currently the Event Coordinator of the Game Development Club and Joint Treasurer of Sangamam 24-25.</i></p><br>
+    </div>
+</div>
+
+<!-- Education Section -->
+<div class="w3-container w3-padding-64" id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Institution</th>
+                <th>Degree</th>
+                <th>Year of Completion</th>
+                <th>Grade/Percentage</th>
+            </tr>
+            <tr>
+                <td>KPR Institute of Engineering and Technology</td>
+                <td>Bachelor of Technology in AI & DS</td>
+                <td>2026</td>
+                <td>8.9 CGPA</td>
+            </tr>
+            <tr>
+                <td>Chennai Public School</td>
+                <td>High School</td>
+                <td>2022</td>
+                <td>92.8%</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Certifications and Projects Section -->
+<div class="w3-container w3-padding-64" id="certifications-and-projects">
+    <div class="container">
+        <h2>Certifications & Projects</h2>
+        
+        <!-- Certifications Table -->
+        <h3>Certifications</h3>
+        <table>
+            <tr>
+                <th>Certification</th>
+                <th>Organization</th>
+            </tr>
+            <tr>
+                <td>Elite in Problem Solving through Programming in C</td>
+                <td>NPTEL</td>
+            </tr>
+            <tr>
+                <td>Elite + Silver in Data Analytics With Python</td>
+                <td>NPTEL</td>
+            </tr>
+            <tr>
+                <td>Winner of Crypt Hunt Event in Samhita'24</td>
+                <td>MIT, Chennai</td>
+            </tr>
+        </table>
+        
+        <!-- Projects Table -->
+        <h3>Projects</h3>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies Used</th>
+            </tr>
+            <tr>
+                <td>Case Analytics and Prioritization</td>
+                <td>Analyzed case data to improve decision-making processes and developed an algorithm to prioritize cases based on urgency and relevance.</td>
+                <td>Python, Pandas, Matplotlib, Scikit-learn</td>
+            </tr>
+            <tr>
+                <td>Customer Relationship Management</td>
+                <td>Built a CRM system to manage customer interactions and track sales.</td>
+                <td>Java, Spring Boot, MySQL</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64" id="contact">
+    <div class="w3-content w3-center">
+        <h2>Contact Me</h2>
+        
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <!-- Contact Form with 3D Effect -->
+        <div class="contact-form-container">
+            <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Copyright 2024 &copy;</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
