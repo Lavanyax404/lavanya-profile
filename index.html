@@ -13,7 +13,6 @@
         }
         body, html {
             height: 100%;
-            background-color: white;
             margin: 0;
         }
         p {
@@ -29,6 +28,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background: white;
         }
         table, th, td {
             border: 1px solid #ddd;
@@ -80,7 +80,7 @@
             text-decoration: none;
         }
         .social-icons a:hover {
-            color: #4CAF50; /* Change color on hover */
+            color: #0e3a91; /* Change color on hover */
         }
         .contact-form-container {
             width: 80%;
@@ -100,7 +100,7 @@
             box-sizing: border-box;
         }
         .contact-form button {
-            background-color: #4CAF50;
+            background-color: #557aff;
             color: white;
             border: none;
             padding: 15px 20px;
@@ -113,27 +113,21 @@
             border-radius: 4px;
         }
         .contact-form button:hover {
-            background-color: #45a049;
+            background-color: #0e3a91;
         }
-        .section {
-            padding: 64px;
-            color: black; /* Maintain the font color */
-        }
+
+        /* Section colors */
         #about {
-            background-color: #17153B;
+            background-color: #B0C4DE; /* Light Steel Blue */
         }
         #education {
-            background-color: #2E236C;
+            background-color: white;
         }
         #certifications-and-projects {
-            background-color: #433D8B;
+            background-color: #B0C4DE; /* Light Steel Blue */
         }
         #contact {
-            background-color: #C8ACD6;
-        }
-        footer {
-            background-color: #17153B; /* Match the background color of the first section for consistency */
-            color: white;
+            background-color: white;
         }
     </style>
 </head>
@@ -150,11 +144,11 @@
 </div>
 
 <!-- About Me Section -->
-<div class="section" id="about">
+<div class="w3-container w3-padding-64" id="about">
     <div class="w3-content">
-        <h1 class="w3-center w3-text-grey"><b>About Me</b></h1>
+        <h1 class="w3-center w3-text-black"><b>About Me</b></h1>
         <div class="about-me-img-container">
-            <img class="about-me-img" src="path/to/your/image.jpg" alt="Lavanya Priya">
+            <img class="about-me-img" src="C:/Users/djaga/OneDrive/Desktop/IMG_0440.jpg" alt="Lavanya Priya">
             <div class="name-overlay">Lavanya Priya</div>
         </div>
         <p><i>I am an enthusiastic third-year engineering student constantly immersed in the realm of innovation, fueled by a love for problem-solving and dedication to crafting future-forward solutions. I actively engage in diverse projects, merging technical expertise with a creative spark to engineer tomorrow's breakthroughs. Motivated individual with strong work ethics and the ability to work independently. I also possess strong organizational and team collaboration skills, with experience in improving processes. Served as an Executive Member of Sparks Student Association, KPRIET, 2023-24, and currently the Event Coordinator of the Game Development Club and Joint Treasurer of Sangamam 24-25.</i></p><br>
@@ -162,7 +156,7 @@
 </div>
 
 <!-- Education Section -->
-<div class="section" id="education">
+<div class="w3-container w3-padding-64" id="education">
     <div class="container">
         <h2>Education</h2>
         <table>
@@ -189,7 +183,7 @@
 </div>
 
 <!-- Certifications and Projects Section -->
-<div class="section" id="certifications-and-projects">
+<div class="w3-container w3-padding-64" id="certifications-and-projects">
     <div class="container">
         <h2>Certifications & Projects</h2>
         
@@ -237,11 +231,36 @@
 </div>
 
 <!-- Contact Section -->
-<div class="section" id="contact">
+<div class="w3-container w3-padding-64" id="contact">
     <div class="w3-content w3-center">
         <h2>Contact Me</h2>
         
         <!-- Social Icons -->
         <div class="social-icons">
-            <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www
+            <a href="mailto:lavanyapriya.j@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/lavanya-priya-2b350b25b/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <br>
+        <br>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Copyright 2024 &copy;</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
