@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        
         body, h1, h2 {
             font-family: "Raleway", sans-serif;
         }
@@ -116,6 +115,26 @@
         .contact-form button:hover {
             background-color: #45a049;
         }
+        .section {
+            padding: 64px;
+            color: black; /* Maintain the font color */
+        }
+        #about {
+            background-color: #17153B;
+        }
+        #education {
+            background-color: #2E236C;
+        }
+        #certifications-and-projects {
+            background-color: #433D8B;
+        }
+        #contact {
+            background-color: #C8ACD6;
+        }
+        footer {
+            background-color: #17153B; /* Match the background color of the first section for consistency */
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -131,11 +150,11 @@
 </div>
 
 <!-- About Me Section -->
-<div class="w3-container w3-padding-64" id="about">
+<div class="section" id="about">
     <div class="w3-content">
         <h1 class="w3-center w3-text-grey"><b>About Me</b></h1>
         <div class="about-me-img-container">
-            <img class="about-me-img" src="images/IMG_0440.jpg" alt="Lavanya Priya">
+            <img class="about-me-img" src="path/to/your/image.jpg" alt="Lavanya Priya">
             <div class="name-overlay">Lavanya Priya</div>
         </div>
         <p><i>I am an enthusiastic third-year engineering student constantly immersed in the realm of innovation, fueled by a love for problem-solving and dedication to crafting future-forward solutions. I actively engage in diverse projects, merging technical expertise with a creative spark to engineer tomorrow's breakthroughs. Motivated individual with strong work ethics and the ability to work independently. I also possess strong organizational and team collaboration skills, with experience in improving processes. Served as an Executive Member of Sparks Student Association, KPRIET, 2023-24, and currently the Event Coordinator of the Game Development Club and Joint Treasurer of Sangamam 24-25.</i></p><br>
@@ -143,7 +162,7 @@
 </div>
 
 <!-- Education Section -->
-<div class="w3-container w3-padding-64" id="education">
+<div class="section" id="education">
     <div class="container">
         <h2>Education</h2>
         <table>
@@ -170,7 +189,7 @@
 </div>
 
 <!-- Certifications and Projects Section -->
-<div class="w3-container w3-padding-64" id="certifications-and-projects">
+<div class="section" id="certifications-and-projects">
     <div class="container">
         <h2>Certifications & Projects</h2>
         
@@ -218,34 +237,11 @@
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-padding-64" id="contact">
+<div class="section" id="contact">
     <div class="w3-content w3-center">
         <h2>Contact Me</h2>
         
         <!-- Social Icons -->
         <div class="social-icons">
             <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
-        
-        <!-- Contact Form with 3D Effect -->
-        <div class="contact-form-container">
-            <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-    <p>Copyright 2024 &copy;</p>
-</footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
-
-</body>
-</html>
+            <a href="https://www
